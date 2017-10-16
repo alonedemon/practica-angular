@@ -1,0 +1,23 @@
+<div class="center">
+<mat-card>
+  <mat-card-title>
+    <h4>Login Form</h4>
+  </mat-card-title>
+  <mat-card-content>
+    <img matListAvatar matListAvatarSize [src]="urlImage">
+    <form>
+      <div>
+          <mat-form-field>
+              <input  [(ngModel)]="username" name="username" matInput placeholder="Username">
+            </mat-form-field>
+      </div>
+      <div>
+          <mat-form-field>
+              <input type="password" [(ngModel)]="password" name="password" matInput placeholder="Password">
+            </mat-form-field>
+      </div>
+      <button type="button" mat-button (click)="validate()">Ingresar</button>
+    </form>    
+  </mat-card-content>
+</mat-card>
+</div>
